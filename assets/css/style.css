@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url(../fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "YoungSerif";
+  src: url(../fonts/young-serif/YoungSerif-Regular.ttf);
+}
+:root {
+  --Serif-font: "YoungSerif";
+  --Serif-font-weight: 400;
+  --Outfit-font: "Outfit";
+  --Outfit-font-weight-small: 400;
+  --Outfit-font-weight-med: 600;
+  --Outfit-font-weight-big: 700;
+  --color-Nutmeg: hsl(14, 45%, 36%);
+  --color-DarkRaspberry: hsl(332, 51%, 32%);
+  --color-RoseWhite: hsl(330, 100%, 98%);
+  --color-Eggshell: hsl(30, 54%, 90%);
+  --color-LightGrey: hsl(30, 18%, 87%);
+  --color-WengeBrown: hsl(30, 10%, 34%);
+  --color-DarkCharcoal: hsl(24, 5%, 18%);
+}
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  padding: 5px;
+  font-size: 16px;
+}
+body {
+  background-color: var(--color-Eggshell);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+  margin-bottom: 25px;
+}
+
+.main {
+  width: 60%;
+  margin: auto;
+  background: white;
+  padding: 15px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 15px;
+}
+.container {
+  width: 95%;
+  margin: auto;
+}
+.banner {
+  margin: auto;
+  display: block;
+  border-radius: 15px;
+  width: 100%;
+  margin-bottom: 32px;
+}
+h1 {
+  font-family: var(--Serif-font);
+  font-weight: var(--Serif-font-weight);
+  color: var(--color-DarkCharcoal);
+  font-size: 2.9rem;
+}
+p {
+  font-family: var(--Outfit-font);
+  font-weight: var(--Outfit-font-weight-small);
+  font-size: 1.2rem;
+  color: var(--color-DarkCharcoal);
+}
+.summary {
+  background-color: var(--color-RoseWhite);
+  border-radius: 15px;
+  padding-top: 22px;
+  padding-left: 41px;
+  padding-right: 41px;
+  padding-bottom: 8px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.summary > ul {
+  padding: 0px;
+  padding-left: 22px;
+}
+.points > li::marker {
+  color: var(--color-DarkRaspberry);
+}
+h4 {
+  font-family: var(--Outfit-font);
+  font-weight: var(--Outfit-font-weight-big);
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  font-size: 1.3rem;
+  color: var(--color-DarkRaspberry);
+}
+span {
+  font-weight: var(--Outfit-font-weight-big);
+}
+.summaryText {
+  padding-left: 15px;
+}
+h3 {
+  font-family: var(--Serif-fontt);
+
+  font-size: 2.3rem;
+  color: var(--color-Nutmeg);
+}
+.ingredients {
+  padding-left: 26px;
+}
+.ingredients > li::marker {
+  color: var(--color-Nutmeg);
+}
+.ingredients > li {
+  font-family: var(--Outfit-font);
+  font-weight: var(--Outfit-font-weight-small);
+  font-size: 1.2rem;
+  color: var(--color-DarkCharcoal);
+  padding-left: 22px;
+}
+ol {
+  padding-left: 26px;
+}
+ol > li {
+  font-family: var(--Outfit-font);
+  font-weight: var(--Outfit-font-weight-small);
+  font-size: 1.2rem;
+  color: var(--color-DarkCharcoal);
+  padding-left: 22px;
+}
+ol > li::marker {
+  color: var(--color-Nutmeg);
+  font-family: var(--Outfit-font);
+  font-weight: var(--Outfit-font-weight-med);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+td {
+  padding: 0px;
+  margin: 0px;
+  border-width: 0px 0px 1px 0px;
+  border-color: var(--color-LightGrey);
+  border-style: solid;
+  font-family: var(--Outfit-font);
+  font-weight: var(--Outfit-font-weight-small);
+  font-size: 1.2rem;
+  color: var(--color-DarkCharcoal);
+  padding-left: 32px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+td:nth-child(2) {
+  font-family: var(--Outfit-font);
+  font-weight: var(--Outfit-font-weight-med);
+  color: var(--color-Nutmeg);
+}
+tr:last-child > td {
+  border: 0px;
+}
+.footer {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer a {
+  color: hsl(228, 45%, 44%);
+}
+@media only screen and (min-width: 375px) and (max-width: 1000px) {
+  body,
+  html {
+    margin: 0px;
+    background-color: white;
+    padding: 0px;
+    font-size: 13.2px;
+  }
+  .main {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+  .container {
+    width: 100%;
+  }
+  .banner {
+    width: 100%;
+    border-radius: 0px;
+  }
+  .mobile {
+    width: 85%;
+    margin: auto;
+  }
+  #instructions {
+    width: 100%;
+    border-width: 1px 0px 1px 0px;
+    border-color: var(--color-LightGrey);
+    border-style: solid;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  #ingredients {
+    padding-top: 0px;
+    padding-bottom: 1px;
+  }
+  #nutrition {
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+}
